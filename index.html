@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container">
+      <!-- Timeblocks go here -->
+      <table class="table table-hover">
+        <tbody class="clearfix">
+          <tr style="height: 100px">
+            <th scope="row" class="">9AM</th>
+            <td colspan="2" class="table-danger" style="width: 1000px"></td>
+            <td>
+              <button type="button" class="btn btn-secondary float-right">Button</button>
+            </td>
+          </tr>
+          <tr style="height: 100px">
+            <th scope="row" class="">10AM</th>
+            <td colspan="2"  class="table-danger" style="width: 1000px"></td>
+            <td>
+              <button type="button" class="btn btn-secondary float-right">Button</button>
+            </td>
+          </tr>
+          <tr style="height: 100px">
+            <th scope="row" class="">11AM</th>
+            <td colspan="2"  class="table-danger" style="width: 1000px"></td>
+            <td>
+              <button type="button" class="btn btn-secondary float-right">Button</button>
+            </td>
+          </tr>
+          <tr style="height: 100px">
+            <th scope="row" class="">12PM</th>
+            <td colspan="2" class="bg-danger" style="width: 1000px"></td>
+            <td>
+              <button type="button" class="btn btn-secondary float-right">Button</button>
+            </td>
+          </tr>
+          <tr style="height: 100px">
+            <th scope="row" class="">1PM</th>
+            <td colspan="2" class="table-primary" style="width: 1000px"></td>
+            <td>
+              <button type="button" class="btn btn-secondary float-right">Button</button>
+            </td>
+          </tr>
+          <tr style="height: 100px">
+            <th scope="row" class="">2PM</th>
+            <td colspan="2" class="table-primary" style="width: 1000px"></td>
+            <td>
+              <button type="button" class="btn btn-secondary float-right">Button</button>
+            </td>
+          </tr>
+          <tr style="height: 100px">
+            <th scope="row" class="">3PM</th>
+            <td colspan="2" class="table-primary" style="width: 1000px"></td>
+            <td>
+              <button type="button" class="btn btn-secondary float-right">Button</button>
+            </td>
+          </tr>
+          <tr style="height: 100px">
+            <th scope="row" class="">4PM</th>
+            <td colspan="2" class="table-primary" style="width: 1000px"></td>
+            <td>
+              <button type="button" class="btn btn-secondary float-right">Button</button>
+            </td>
+          </tr>
+          <tr style="height: 100px">
+            <th scope="row" class="">5PM</th>
+            <td colspan="2" class="table-primary" style="width: 1000px"></td>
+            <td>
+              <button type="button" class="btn btn-secondary float-right">Button</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+              <!-- On rows
+        <tr class="table-active">...</tr>
+
+        <tr class="table-primary">...</tr>
+        <tr class="table-secondary">...</tr>
+        <tr class="table-success">...</tr>
+        <tr class="table-danger">...</tr>
+        <tr class="table-warning">...</tr>
+        <tr class="table-info">...</tr>
+        <tr class="table-light">...</tr>
+        <tr class="table-dark">...</tr> -->
+
+        <!-- On cells (`td` or `th`) -->
+        <!-- <tr>
+          <td class="table-active">...</td>
+          
+          <td class="table-primary">...</td>
+          <td class="table-secondary">...</td>
+          <td class="table-success">...</td>
+          <td class="table-danger">...</td>
+          <td class="table-warning">...</td>
+          <td class="table-info">...</td>
+          <td class="table-light">...</td>
+          <td class="table-dark">...</td>
+        </tr> -->
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  </body>
+</html>

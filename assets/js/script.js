@@ -1,14 +1,14 @@
+// Called the moment function to imput on the top of the page
 var today = moment();
 $("#currentDay").text(today.format("dddd, MMMM Do YYYY"));
-// console.log(today)
 
-//  Compare currentHour to hour in the Time block. if the hour is past add a class of past. if the current hour is equal to our block hour add a class of present. if the currentHour is greater than the block hour add a class of future
+// Created this function to add a class of past, present or puture to time block selector based on the current hour in moments
 function setColors() {
     var currentHour = moment().hours();
-    // Need to creat a loop that will target each input
+
+// .each was used to create a loop like its done in JS
     $(".time-block").each(function() {
         var idHour = parseInt($(this).attr("id"))
-        // console.log(idHour)
 
         if(idHour < currentHour) {
             $(this).addClass("past")
@@ -23,6 +23,7 @@ function setColors() {
     })
 };
 
+// This jQuery was createdt to save the key and value of the row clicked into local storage
 $(".saveBtn").on("click", function() {
     var key = $(this).parent().attr("id");
     var value = $(this).siblings(".description").val();
@@ -31,6 +32,7 @@ $(".saveBtn").on("click", function() {
 
 });
 
+// This jQuerys were created to parse the data from local storage and apply it to each textbox
 $("#9 .description").text(localStorage.getItem("9"));
 $("#10 .description").text(localStorage.getItem("10"));
 $("#11 .description").text(localStorage.getItem("11"));
@@ -40,6 +42,6 @@ $("#14 .description").text(localStorage.getItem("14"));
 $("#15 .description").text(localStorage.getItem("15"));
 $("#16 .description").text(localStorage.getItem("16"));
 $("#17 .description").text(localStorage.getItem("17"));
-// Need a function that will take the input of the table data and work with the button to save to local storage
-// Need a fucttion that will look at loocal storge and imput any saved data after the page refreshes
+
+// This function is called to automatically run the color hour function above
 setColors();

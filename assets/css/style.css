@@ -1,8 +1,17 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
+/* Added a gradient background to make it look a bit nicer */
   background-image: linear-gradient(to bottom right, #D8B5FF, #1EAE98);
+}
+
+/* Added styling to the date in order to make it stand out */
+.date {
+  font-size: 30px;
+  color: #4D5656;
+  text-shadow: 1px 1px black;
+  font-weight: 900;
 }
 
 textarea {
@@ -15,6 +24,7 @@ textarea {
 }
 
 .jumbotron {
+  font-family: 'Patua One', cursive;
   text-align: center;
   background-color: transparent;
   color: black;

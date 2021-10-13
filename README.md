@@ -33,4 +33,4 @@ Thats it, your event is now saved to the local storage!
 
 ## License
 MIT License
-Copyright (c) [2021] [Israel M. Rios]
+Copyright (c) 2021 Israel M Rios
